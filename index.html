@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mico</title>
+
+    <link rel="shortcut icon" href="favicon.png" type="png" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>Mico</h1>
+      </div>
+
+      <nav class="menu">
+        <button class="button-menu">
+          <span class="material-symbols-outlined"> close </span>
+        </button>
+
+        <a href="#">Sobre</a>
+        <a href="#sprites">Sprites</a>
+        <a href="#">Arte</a>
+      </nav>
+
+      <button class="button-menu">
+        <span class="material-symbols-outlined"> menu </span>
+      </button>
+    </header>
+
+    <main>
+      <img src="img/mico-banner.webp" alt="Mico Banner" />
+
+      <p>
+        Em Mico, você assume o papel de um gatinho minerador extremamente
+        pragmático e determinado. Sem tempo para distrações, ele se aventura nas
+        profundezas de uma vasta e perigosa caverna em busca do que realmente
+        importa: pedras preciosas e minerais raros. Cada camada exige
+        planejamento cuidadoso, upgrades e estratégias eficientes para superar
+        desafios e inimigos. Aqui, a mineração não é só uma aventura é um
+        trabalho sério.
+      </p>
+    </main>
+
+    <section id="sprites" class="sprites">
+      <h2 class="title-sprite"></h2>
+
+      <div class="show-sprites">
+        <button class="prev-sprite">
+          <span class="material-symbols-outlined">chevron_left</span>
+        </button>
+
+        <img class="static-sprite" />
+        <img class="animation-sprite" />
+
+        <button class="next-sprite">
+          <span class="material-symbols-outlined">chevron_right</span>
+        </button>
+      </div>
+
+      <div class="change-sprite">
+        <button class="btn-sprite">
+          <img class="img-btn-sprite" />
+        </button>
+
+        <button class="btn-sprite">
+          <img class="img-btn-sprite" />
+        </button>
+
+        <button class="btn-sprite">
+          <img class="img-btn-sprite" />
+        </button>
+
+        <button class="btn-sprite">
+          <img class="img-btn-sprite" />
+        </button>
+      </div>
+
+      <p class="description-sprite"></p>
+    </section>
+
+    <footer>Todos os Direitos Reservados ® 2024 Rafael Alloces</footer>
+
+    <script src="scripts/scripts.js"></script>
+  </body>
+</html>

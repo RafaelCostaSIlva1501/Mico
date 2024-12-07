@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Tiny5&display=swap");
+
+/* Reset básico para evitar inconsistências entre navegadores */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilização geral do corpo */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  min-height: 100vh;
+
+  background-color: #202c38;
+
+  color: #ccc;
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 30px;
+
+  background-color: #121212;
+}
+
+header .logo h1 {
+  color: #ed9221;
+  text-shadow: 0px 0px 10px#E6352D;
+  font-family: "Tiny5", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+}
+
+header nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  width: 0;
+  height: 100%;
+  padding: 20px 0px;
+
+  background-color: #ed9221;
+
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  z-index: 100;
+}
+
+header nav a {
+  width: min-content;
+  padding: 5px 7px;
+
+  border-radius: 5px;
+
+  color: #f5f5f5;
+  text-decoration: none;
+  font-size: 18px;
+
+  transition: all 0.3s;
+}
+
+header nav a:hover {
+  background-color: #f5f5f5;
+  color: #ed9221;
+}
+
+header nav button {
+  display: flex;
+  width: max-content;
+  margin-left: auto;
+}
+
+header button {
+  display: flex;
+
+  background: none;
+  border: none;
+  border-radius: 2px;
+
+  color: #f5f5f5;
+
+  cursor: pointer;
+
+  transition: all 0.3s;
+}
+
+header button:hover {
+  transform: scale(1.2);
+}
+
+/* Estilização do elemento <main> */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  padding: 20px;
+}
+
+/* Estilização da imagem */
+main img {
+  width: 100%;
+  max-width: 600px;
+
+  border-radius: 10px;
+}
+
+/* Efeito hover para a imagem */
+main img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Estilização do parágrafo */
+main p {
+  color: #ccc;
+
+  font-size: 1em;
+  text-align: justify;
+}
+
+.sprites {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  padding: 20px 5px;
+
+  background-color: #121e2b;
+}
+
+.sprites h2 {
+  color: #ed9221;
+  text-align: center;
+  text-shadow: 0px 0px 10px#E6352D;
+  font-family: "Tiny5", sans-serif;
+}
+
+.show-sprites {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.show-sprites button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 5px;
+
+  background-color: #2a2a3b;
+  box-shadow: 0 4px 10px #00000066;
+  border: 1px solid #444;
+  border-radius: 8px;
+
+  color: #ccc;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.show-sprites button:hover {
+  background-color: #ed9221;
+  border-color: #ed9221;
+  box-shadow: 0px 0px 15px #e6352d;
+  transform: scale(1.1);
+}
+
+.show-sprites img {
+  width: 170px;
+  height: 170px;
+
+  object-fit: contain;
+  border-radius: 12px;
+  background: #1e1e2f;
+  border: 2px solid #444;
+
+  transition: all 0.3s ease;
+}
+
+.change-sprite {
+  display: flex;
+  justify-content: space-evenly;
+
+  width: 100%;
+}
+
+.change-sprite button {
+  display: flex;
+
+  background: none;
+  border: none;
+}
+
+.change-sprite img {
+  width: 80px;
+  height: 80px;
+  padding: 5px;
+
+  background: #1e1e2f;
+  border: 2px solid #444;
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.change-sprite img:hover {
+  border-color: #ed9221; /* Destaque ao passar o mouse */
+  transform: scale(1.05);
+  box-shadow: 0 0px 10px #e6352d;
+}
+
+.sprites p {
+  padding: 15px;
+
+  background: #1e1e2f;
+  border-radius: 8px;
+  border: 1px solid #444;
+
+  color: #d1d1d1;
+  text-align: center;
+  font-family: "Tiny5";
+  font-size: 16px;
+  line-height: 1.6;
+
+  transition: all 0.3s ease;
+}
+
+/* Estilização do rodapé */
+footer {
+  padding: 10px;
+
+  background-color: #121212;
+
+  color: #ccc;
+  font-size: 0.8em;
+  text-align: center;
+}
