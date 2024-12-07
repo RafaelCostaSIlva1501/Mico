@@ -98,17 +98,17 @@ let spriteIndex = 0;
 
 const changeSprite = (i) => {
   titleSprite.textContent = sprites[i].title;
-  staticSprite.src = `../img/Mico/${sprites[i].sprite[0]}`;
-  animationSprite.src = `../img/Mico/${sprites[i].gif}`;
+  staticSprite.src = `img/Mico/${sprites[i].sprite[0]}`;
+  animationSprite.src = `img/Mico/${sprites[i].gif}`;
 
   btnSprite.forEach((e, index) => {
     e.addEventListener("click", () => {
-      staticSprite.src = `../img/Mico/${sprites[i].sprite[index]}`;
+      staticSprite.src = `img/Mico/${sprites[i].sprite[index]}`;
     });
   });
 
   imgBtnSprite.forEach((e, index2) => {
-    e.src = `../img/Mico/${sprites[i].sprite[index2]}`;
+    e.src = `img/Mico/${sprites[i].sprite[index2]}`;
   });
 
   descriptionSprite.textContent = sprites[i].description;
