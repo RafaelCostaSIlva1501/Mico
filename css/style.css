@@ -61,7 +61,7 @@ header nav {
 }
 
 header nav a {
-  width: min-content;
+  width: auto;
   padding: 5px 7px;
 
   border-radius: 5px;
@@ -243,6 +243,89 @@ main p {
   transition: all 0.3s ease;
 }
 
+.about {
+  padding: 40px 30px;
+
+  background-color: #1a2533;
+}
+
+.about h2 {
+  margin-bottom: 20px;
+
+  color: #ed9221;
+  font-family: "Tiny5", sans-serif;
+  font-size: 28px;
+  text-align: center;
+
+  text-shadow: 0px 0px 8px #e6352d;
+  border-bottom: 2px solid #2e3b4f;
+  padding-bottom: 5px;
+}
+
+.about h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  color: #f5a623;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid #2e3b4f;
+}
+
+.about p {
+  margin-top: 10px;
+  margin-bottom: 15px;
+
+  color: #d1d1d1;
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.about p strong {
+  color: #ed9221;
+}
+
+.about p em {
+  color: #f5a623;
+  font-style: italic;
+}
+
+.about p:hover {
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.about p + h2 {
+  margin-top: 40px;
+}
+
+.about ul {
+  margin: 20px 0;
+  padding-left: 40px;
+
+  color: #d1d1d1;
+}
+
+.about ul li {
+  margin-bottom: 10px;
+  position: relative;
+
+  list-style: none;
+}
+
+.about ul li::before {
+  content: "⛏️";
+  position: absolute;
+  left: -30px;
+  color: #ed9221;
+}
+
+.about ul li:hover {
+  color: #ed9221;
+  transition: color 0.3s ease;
+}
+
 /* Estilização do rodapé */
 footer {
   padding: 10px;
@@ -252,4 +335,39 @@ footer {
   color: #ccc;
   font-size: 0.8em;
   text-align: center;
+}
+
+@media (min-width: 1024px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+  }
+
+  main img {
+    flex: 1;
+
+    max-width: 50%;
+    height: auto;
+    margin-right: 20px;
+
+    border-radius: 10px;
+  }
+
+  main p {
+    flex: 2;
+    color: #d1d1d1;
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: justify;
+
+    padding: 20px;
+
+    border-radius: 8px;
+  }
 }
