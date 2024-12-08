@@ -158,7 +158,6 @@ main p {
 .button-sprites {
   display: flex;
   justify-content: space-around;
-
 }
 
 .button-sprites button {
@@ -283,7 +282,6 @@ main p {
   color: #d1d1d1;
   font-size: 16px;
   line-height: 1.8;
-  text-align: justify;
 }
 
 .about p strong {
@@ -368,7 +366,6 @@ footer {
     color: #d1d1d1;
     font-size: 18px;
     line-height: 1.8;
-    text-align: justify;
 
     padding: 20px;
 
